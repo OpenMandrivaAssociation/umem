@@ -1,0 +1,13 @@
+diff --git a/malloc.c b/malloc.c
+index 7eec207..00c1736 100644
+--- a/malloc.c
++++ b/malloc.c
+@@ -453,7 +453,7 @@ static void __attribute__((constructor)) umem_malloc_init_hook(void)
+ 	}
+ }
+ 
+-void (*__malloc_initialize_hook)(void) = umem_malloc_init_hook;
++void (*volatile __malloc_initialize_hook)(void) = umem_malloc_init_hook;
+ 
+ #else
+ void __attribute__((constructor))

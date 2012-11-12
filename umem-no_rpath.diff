@@ -1,0 +1,11 @@
+--- Makefile.am	2007-03-18 00:52:25.000000000 +0100
++++ Makefile.am.oden	2008-02-07 06:27:43.000000000 +0100
+@@ -36,7 +36,7 @@
+ 			sys/vmem_impl_user.h
+ 
+ libumem_malloc_la_SOURCES = malloc.c
+-libumem_malloc_la_LDFLAGS = -lpthread -ldl -R$(libdir) -lumem 
++libumem_malloc_la_LDFLAGS = -lpthread -ldl -lumem 
+ 
+ man3_MANS = umem_alloc.3 umem_cache_create.3 umem_debug.3
+ EXTRA_DIST = COPYRIGHT OPENSOLARIS.LICENSE umem.spec Doxyfile umem_test4 \
