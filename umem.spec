@@ -5,7 +5,7 @@
 Summary:	Port of Solaris's slab allocator
 Name:		umem
 Version:	1.0.1
-Release:	1
+Release:	2
 Group:		System/Libraries
 License:	CDDL
 URL:		https://labs.omniti.com/trac/portableumem/
